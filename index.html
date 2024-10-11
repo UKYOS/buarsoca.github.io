@@ -43,7 +43,7 @@
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
 
       <a href="index.html" class="logo d-flex align-items-center me-auto">
-        <h1 class="sitename" style="color: #2e91fc;">GRUPO GALUs</h1>
+        <h1 class="sitename" style="color: #2e91fc;">GRUPO GALU</h1>
       </a>
 
       <nav id="navmenu" class="navmenu">
@@ -565,32 +565,32 @@
           </div>
 
           <div class="col-lg-7">
-            <form action="assets/php/enviar.php" method="post" data-aos="fade-up" data-aos-delay="500">
+            <form action="https://formsubmit.co/joshmaykolperezmerino052@gmail.com" method="POST" data-aos="fade-up" data-aos-delay="500">
               <div class="row gy-4">
 
                 <div class="col-md-6">
-                  <input id="name" type="text" name="name" class="form-control" placeholder="NOMBRE" required="">
+                  <input type="text" name="name" class="form-control" placeholder="NOMBRE" required="">
                 </div>
 
                 <div class="col-md-6 ">
-                  <input id="email" type="email" class="form-control" name="email" placeholder="EMAIL" required="">
+                  <input type="email" class="form-control" name="email" placeholder="EMAIL" required="">
                 </div>
 
                 <div class="col-md-12">
-                  <input id="asunto" type="text" class="form-control" name="asunto" placeholder="SUJETO" required="">
+                  <input type="text" class="form-control" name="subject" placeholder="ASUNTO" required="">
                 </div>
 
                 <div class="col-md-12">
-                  <textarea id="message" class="form-control" name="message" rows="6" placeholder="MENSAJE" required=""></textarea>
+                  <textarea class="form-control" name="message" rows="6" placeholder="MENSAJE" required=""></textarea>
                 </div>
-                 <!-- <input type="hidden" name="_next" value="">  -->
+                
+
                 <div class="col-md-12 text-center">
-                  <div class="loading">Cargando</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Tu mensaje fue enviado. Gracias!</div>
-
+                  <input type="hidden" name="_next" value="http://127.0.0.1:5500/"> 
+                  <input type="hidden" name="_captcha" value="false"> 
                   <button type="submit">Enviar Mensaje</button>
                 </div>
+                
                 
               </div>
             </form>
