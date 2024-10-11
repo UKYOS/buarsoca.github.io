@@ -27,6 +27,9 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="assets/js/graficos.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
 </head>
 
 <body class="service-details-page">
@@ -121,7 +124,9 @@
                 <p><strong>Cumplimiento con normativas ambientales:</strong> Nos alineamos con las normativas y estudios recientes para implementar soluciones de depuración que son eficientes y sostenibles.</p>
               </div>
               <div class="graph-container">
-                <img src="assets/img/servicio/grafico1.png" class="graph-3d" alt="Grafico De Depuración de Aguas Residuales">
+                <h2 style="text-align: center;">Gráfico De Depuración de Aguas Residuales</h2>
+                <canvas id="lineChart" width="400" height="200"></canvas>
+
             </div>
               <h3>Nuestros servicios incluyen:</h3>
               <div style="border: 2px solid #007bff; padding: 15px; border-radius: 5px; background-color: #f9f9f9;">
@@ -147,7 +152,8 @@
                 <p><strong>Adaptabilidad a diversas industrias:</strong> Nuestros análisis físico-químicos son aplicables a una amplia variedad de sectores, incluyendo industrial, agrícola y ambiental, adaptándonos a las necesidades específicas de cada cliente.</p>
               </div>
               <div class="graph-container">
-                <img src="assets/img/servicio/grafico2.png" class="graph-3d" alt="Grafico De Depuración de Aguas Residuales">
+                <h2 style="text-align: center;">Gráfico De Análisis Físico-Químico</h2>
+                <canvas id="myChart" width="400" height="200"></canvas>
             </div>
               <h3>Nuestros servicios incluyen:</h3>
               <div style="border: 2px solid #28a745; padding: 15px; border-radius: 5px; background-color: #f9f9f9;">
@@ -171,7 +177,8 @@
                 <p><strong>Mitigación de riesgos ambientales:</strong> Nuestra supervisión ayuda a mitigar riesgos ambientales, asegurando que las descargas de efluentes no afecten negativamente el entorno natural.</p>
               </div>
               <div class="graph-container">
-                <img src="assets/img/servicio/grafico3.png" class="graph-3d" alt="Grafico De Depuración de Aguas Residuales">
+                <h2 style="text-align: center;">Gráfica de Calidad de Aguas Afuentes y Efluentes</h2>
+                <canvas id="doughnutChart" width="400" height="200"></canvas>
             </div>
               <h3>Nuestros servicios incluyen:</h3>
               <div style="border: 2px solid #ffc107; padding: 15px; border-radius: 5px; background-color: #f9f9f9;">
@@ -196,7 +203,9 @@
                 <p><strong>Sostenibilidad y cumplimiento normativo:</strong> Nuestras optimizaciones no solo mejoran el desempeño de las plantas de tratamiento, sino que también aseguran el cumplimiento con normativas ambientales, promoviendo un desarrollo sostenible.</p>
               </div>
               <div class="graph-container">
-                <img src="assets/img/servicio/grafico4.jpg" class="graph-3d" alt="Grafico De Depuración de Aguas Residuales">
+                <h2 style="text-align: center;">Gráfico De Evolución del Proceso de Tratamiento de Aguas Residuales</h2>
+                <canvas id="myNewChart" width="400" height="200"></canvas>
+            
             </div>
               <h3>Nuestros servicios incluyen:</h3>
               <div style="border: 2px solid #dc3545; padding: 15px; border-radius: 5px; background-color: #f9f9f9;">
@@ -208,7 +217,7 @@
             
             </div>
             
-          <<div id="marketing" class="service-content" style="display:none;">
+          <div id="marketing" class="service-content" style="display:none;">
             <h2>Restauración y Remediación de Espejos de Agua</h2>
             <p>
               En <strong>GRUPO GALU</strong>, nos especializamos en la restauración y remediación de espejos de agua, tales como lagos, lagunas y embalses, que han sido afectados por la contaminación y otros factores ambientales adversos. Nuestro enfoque se basa en la aplicación de tecnologías avanzadas y prácticas sostenibles que permiten recuperar estos ecosistemas acuáticos y devolverles su equilibrio natural.
@@ -220,7 +229,8 @@
               <p><strong>Prevención de futuros daños:</strong> Implementamos estrategias sostenibles que no solo restauran los espejos de agua, sino que también previenen su degradación futura, asegurando su preservación a largo plazo.</p>
             </div>
             <div class="graph-container">
-              <img src="assets/img/servicio/grafico5.jpg" class="graph-3d" alt="Grafico De Depuración de Aguas Residuales">
+              <h2 style="text-align: center;">Crecimiento de la Restauración y Remediación de Espejos de Agua</h2>
+              <canvas id="restorationChart" width="400" height="200"></canvas>
           </div>
             <h3>Nuestros servicios incluyen:</h3>
             <div style="border: 2px solid #6c757d; padding: 15px; border-radius: 5px; background-color: #f9f9f9;">
@@ -245,7 +255,8 @@
               <p><strong>Soluciones sostenibles:</strong> La bioremediación es una alternativa ecológica a los métodos convencionales de limpieza, ofreciendo una solución sostenible que protege el medio ambiente a largo plazo.</p>
             </div>
             <div class="graph-container">
-              <img src="assets/img/servicio/grafico6.jpg" class="graph-3d" alt="Grafico De Depuración de Aguas Residuales">
+              <h2 style="text-align: center;">Gráfica de Evaluación y Biorremediación de Cuerpos de Agua</h2>
+              <canvas id="bioremediationChart" width="400" height="200"></canvas>
           </div>
             <h3>Nuestros servicios incluyen:</h3>
             <div style="border: 2px solid #17a2b8; padding: 15px; border-radius: 5px; background-color: #f9f9f9;">
@@ -276,7 +287,8 @@
               <p>En <strong>GRUPO GALU</strong>, estamos comprometidos con la innovación y sostenibilidad en el tratamiento de aguas, proporcionando soluciones biológicas que mejoran la eficiencia y protegen el medio ambiente.</p>
             </div>
             <div class="graph-container">
-              <img src="assets/img/servicio/grafico7.jpg" class="graph-3d" alt="Grafico De Depuración de Aguas Residuales">
+              <h2 style="text-align: center;">Crecimiento de la Optimización Biológica de Procesos de Tratamiento de Aguas</h2>
+              <canvas id="optimizationChart" width="400" height="200"></canvas>
           </div>
           </div>
           

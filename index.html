@@ -565,25 +565,25 @@
           </div>
 
           <div class="col-lg-7">
-            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="500">
+            <form action="assets/php/enviar.php" method="post" data-aos="fade-up" data-aos-delay="500">
               <div class="row gy-4">
 
                 <div class="col-md-6">
-                  <input type="text" name="name" class="form-control" placeholder="NOMBRE" required="">
+                  <input id="name" type="text" name="name" class="form-control" placeholder="NOMBRE" required="">
                 </div>
 
                 <div class="col-md-6 ">
-                  <input type="email" class="form-control" name="email" placeholder="EMAIL" required="">
+                  <input id="email" type="email" class="form-control" name="email" placeholder="EMAIL" required="">
                 </div>
 
                 <div class="col-md-12">
-                  <input type="text" class="form-control" name="subject" placeholder="SUJETO" required="">
+                  <input id="asunto" type="text" class="form-control" name="asunto" placeholder="SUJETO" required="">
                 </div>
 
                 <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="6" placeholder="MENSAJE" required=""></textarea>
+                  <textarea id="message" class="form-control" name="message" rows="6" placeholder="MENSAJE" required=""></textarea>
                 </div>
-
+                 <!-- <input type="hidden" name="_next" value="">  -->
                 <div class="col-md-12 text-center">
                   <div class="loading">Cargando</div>
                   <div class="error-message"></div>
@@ -591,7 +591,7 @@
 
                   <button type="submit">Enviar Mensaje</button>
                 </div>
-
+                
               </div>
             </form>
           </div><!-- End Contact Form -->
